@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noopur Sanjay Poharkar | Visual Identity & Strategy</title>
+    <meta name="description" content="Senior Graphic Designer & Social Media Strategist for the Publishing Industry." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        background: '#050505', /* Deepest Black */
+                        surface: '#0F0F0F',     /* Card Background */
+                        border: '#27272a',      /* Subtle Grey Border */
+                        lavender: '#c4b5fd',    /* Primary Accent */
+                        pinkish: '#f472b6',     /* Secondary Glow */
+                        textMain: '#e4e4e7',
+                        textMuted: '#a1a1aa',
+                    },
+                    backgroundImage: {
+                        'gradient-glow': 'linear-gradient(135deg, rgba(196, 181, 253, 0.1), rgba(244, 114, 182, 0.05))',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Modern Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+        /* Subtle Fade In */
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Gradient Text Utility */
+        .text-gradient {
+            background: linear-gradient(to right, #c4b5fd, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-textMain antialiased selection:bg-lavender selection:text-black">
+
+    <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-xl font-medium tracking-tight hover:text-white transition">Noopur S.P.</a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-textMuted">
+                <a href="#services" class="hover:text-lavender transition-colors">Services</a>
+                <a href="#work" class="hover:text-lavender transition-colors">Work</a>
+                <a href="#about" class="hover:text-lavender transition-colors">About</a>
+                <a href="#testimonials" class="hover:text-lavender transition-colors">Clients</a>
+            </div>
+
+            <a href="mailto:officialnoopurspoharkar@gmail.com" class="group flex items-center gap-2 text-sm font-medium border border-border px-5 py-2 rounded-full hover:bg-lavender hover:text-black transition-all duration-300">
+                <span>Get in Touch</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:rotate-45 transition-transform"></i>
+            </a>
+        </div>
+    </nav>
+
+    <section class="pt-48 pb-32 px-6 max-w-6xl mx-auto flex flex-col justify-center relative">
+        <div class="absolute top-20 right-0 w-96 h-96 bg-lavender/5 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-pinkish/5 rounded-full blur-[80px] pointer-events-none"></div>
+
+        <div class="max-w-4xl fade-in z-10">
+            <div class="inline-flex items-center gap-2 mb-8 px-3 py-1 rounded-full border border-border bg-surface text-xs font-medium text-lavender tracking-widest uppercase">
+                <span class="w-1.5 h-1.5 rounded-full bg-lavender animate-pulse"></span>
+                Available for new projects
+            </div>
+            
+            <h1 class="font-serif text-5xl md:text-7xl leading-[1.1] mb-8 text-white">
+                Designing stories for <br>
+                <span class="text-gradient">books & brands.</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-textMuted max-w-xl leading-relaxed mb-12">
+                I combine graphic design with social strategy to help authors and publishers cut through the noise and turn stories into bestselling brands.
+            </p>
+            
+            <div class="flex flex-wrap gap-4">
+                <a href="#contact" class="px-8 py-3.5 bg-lavender text-black font-semibold rounded-lg hover:bg-white transition shadow-[0_0_20px_rgba(196,181,253,0.3)]">
+                    Let's Discuss Your Project
+                </a>
+                <a href="#work" class="px-8 py-3.5 border border-border text-textMain font-medium rounded-lg hover:border-pinkish transition">
+                    View Selected Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 border-t border-border">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div>
+                    <h2 class="font-serif text-3xl md:text-4xl mb-4">Expertise</h2>
+                    <p class="text-textMuted">Specialized toolkit for the publishing industry.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-8 rounded-xl bg-surface border border-border hover:border-lavender/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-10 h-10 rounded-lg bg-border/30 flex items-center justify-center mb-6 text-lavender group-hover:scale-110 transition-transform">
+                        <i data-lucide="book-open" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-3">Book Cover Design</h3>
+                    <p class="text-sm text-textMuted leading-relaxed">Genre-aware cover art that stands out on shelves and thumbnails. Includes typography, layout, and print-ready files.</p>
+                </div>
+
+                <div class="p-8 rounded-xl bg-surface border border-border hover:border-pinkish/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-10 h-10 rounded-lg bg-border/30 flex items-center justify-center mb-6 text-pinkish group-hover:scale-110 transition-transform">
+                        <i data-lucide="layout-grid" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-3">Social Media Design</h3>
+                    <p class="text-sm text-textMuted leading-relaxed">Cohesive visual systems for Instagram and LinkedIn. I create templates and carousels that drive reader engagement.</p>
+                </div>
+
+                <div class="p-8 rounded-xl bg-surface border border-border hover:border-lavender/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-10 h-10 rounded-lg bg-border/30 flex items-center justify-center mb-6 text-lavender group-hover:scale-110 transition-transform">
+                        <i data-lucide="fingerprint" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-3">Author Branding</h3>
+                    <p class="text-sm text-textMuted leading-relaxed">Establishing a consistent visual voice for authors. Logo design, color palettes, and brand guidelines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="py-24 border-t border-border">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="font-serif text-3xl md:text-4xl mb-12">Selected Work</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="group cursor-pointer">
+                    <div class="w-full aspect-[4/5] bg-surface border border-border rounded-xl overflow-hidden relative mb-4">
+                        <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?q=80&w=2730&auto=format&fit=crop" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-lg font-medium text-white group-hover:text-lavender transition">The Published Cover</h3>
+                            <p class="text-sm text-textMuted">Print Design / Art Direction</p>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="w-5 h-5 text-textMuted group-hover:text-white transition"></i>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="w-full aspect-[4/5] bg-surface border border-border rounded-xl overflow-hidden relative mb-4 grid grid-cols-2 gap-2 p-2">
+                         <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2574&auto=format&fit=crop" class="w-full h-full object-cover rounded opacity-60">
+                        <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=2574&auto=format&fit=crop" class="w-full h-full object-cover rounded opacity-60">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2574&auto=format&fit=crop" class="w-full h-full object-cover rounded opacity-60">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2574&auto=format&fit=crop" class="w-full h-full object-cover rounded opacity-60">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-lg font-medium text-white group-hover:text-pinkish transition">Social Campaigns</h3>
+                            <p class="text-sm text-textMuted">15+ Templates & Strategy</p>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="w-5 h-5 text-textMuted group-hover:text-white transition"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 border-t border-border bg-gradient-glow relative">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <div>
+                    <h2 class="font-serif text-3xl md:text-4xl text-white mb-6">
+                        Bridging the gap between <br>
+                        <span class="text-textMuted italic">strategy and soul.</span>
+                    </h2>
+                    <div class="space-y-6 text-textMuted leading-relaxed">
+                        <p>
+                            I am <strong>Noopur Sanjay Poharkar</strong>. In an industry flooded with noise, I create clarity. My work is dedicated to the publishing world—helping authors and PR agencies cut through the algorithm.
+                        </p>
+                        <p>
+                            While my heart is in books, my brain works like a product designer. My background in UI/UX means I don't just make things "look pretty"—I build visual systems that scale and convert.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-8 border-t border-border flex gap-12">
+                        <div>
+                            <span class="block text-2xl font-serif text-white">2026</span>
+                            <span class="text-xs text-textMuted uppercase tracking-wider">Focus Year</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-serif text-white">Global</span>
+                            <span class="text-xs text-textMuted uppercase tracking-wider">Client Base</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-surface/80 backdrop-blur border border-border rounded-xl p-8">
+                    <h3 class="text-white font-medium mb-6 flex items-center gap-2">
+                        <i data-lucide="layers" class="w-4 h-4 text-lavender"></i>
+                        Core Competencies
+                    </h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between text-sm mb-2 text-gray-300">
+                                <span>Publishing Design</span>
+                                <span class="text-lavender">Advanced</span>
+                            </div>
+                            <div class="w-full bg-background rounded-full h-1">
+                                <div class="bg-lavender h-1 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-2 text-gray-300">
+                                <span>Canva Architecture</span>
+                                <span class="text-pinkish">Expert</span>
+                            </div>
+                            <div class="w-full bg-background rounded-full h-1">
+                                <div class="bg-pinkish h-1 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-2 text-gray-300">
+                                <span>Social Strategy</span>
+                                <span class="text-lavender">Strategic</span>
+                            </div>
+                            <div class="w-full bg-background rounded-full h-1">
+                                <div class="bg-lavender h-1 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-24 border-t border-border">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="font-serif text-3xl mb-12 text-center">Client Words</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="p-8 border border-border rounded-xl bg-surface/50 relative">
+                    <i data-lucide="quote" class="w-8 h-8 text-border absolute top-6 right-6"></i>
+                    <p class="text-gray-300 leading-relaxed italic mb-6">
+                        "I have had a genuinely great experience working with Noopur. She efficiently managed my social media page and grasped quickly what was needed. The best aspects were her professionalism in fulfilling commitments, her promptness, and her patient ear for my suggestions."
+                    </p>
+                    <div>
+                        <p class="text-white font-semibold">Asif NK Jani</p>
+                        <p class="text-xs text-lavender uppercase tracking-wider">Social Media Client</p>
+                    </div>
+                </div>
+
+                <div class="p-8 border border-border rounded-xl bg-surface/50 relative">
+                    <i data-lucide="quote" class="w-8 h-8 text-border absolute top-6 right-6"></i>
+                    <p class="text-gray-300 leading-relaxed italic mb-6">
+                        "I hired Noopur for my book cover design, and the result was exceptional. She managed to capture the exact mood I was looking for, blending artistic creativity with market standards. Highly recommended for any author."
+                    </p>
+                    <div>
+                        <p class="text-white font-semibold">Yogesh Bhavsar</p>
+                        <p class="text-xs text-pinkish uppercase tracking-wider">Book Cover Client</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-24 border-t border-border bg-surface">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            
+            <h2 class="font-serif text-4xl md:text-5xl text-white mb-6">Let's Work Together</h2>
+            <p class="text-textMuted mb-10 max-w-xl mx-auto">
+                I'm currently available for new projects. Whether you're an author preparing for a launch or a publisher looking for a consistent social presence, I'd love to help bring your vision to life.
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-16">
+                <a href="mailto:officialnoopurspoharkar@gmail.com" class="flex items-center gap-2 px-8 py-4 bg-lavender text-black font-semibold rounded-full hover:scale-105 transition-transform">
+                    <i data-lucide="mail" class="w-4 h-4"></i>
+                    officialnoopurspoharkar@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/noopur-s-poharkar" target="_blank" class="flex items-center gap-2 px-8 py-4 border border-border text-white font-medium rounded-full hover:border-pinkish transition">
+                    <i data-lucide="linkedin" class="w-4 h-4"></i>
+                    Connect on LinkedIn
+                </a>
+            </div>
+
+            <div class="text-xs text-zinc-600">
+                &copy; 2026 Noopur Sanjay Poharkar. Maharashtra, India.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
